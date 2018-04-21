@@ -14,14 +14,16 @@ Summary: The 'leaflet' JavaScript library provides many plugins some of which ar
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-leaflet.extras-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-leaflet.extras-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-leaflet.extras-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-leaflet.extras-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-leaflet.extras-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-leaflet-extras-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-leaflet.extras-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-leaflet.extras-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-leaflet.extras-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-leaflet.extras-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-leaflet.extras-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-leaflet-extras-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-leaflet.extras/badges/version.svg)](https://anaconda.org/conda-forge/r-leaflet.extras)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-leaflet.extras/badges/downloads.svg)](https://anaconda.org/conda-forge/r-leaflet.extras)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--leaflet.extras-green.svg)](https://anaconda.org/conda-forge/r-leaflet.extras) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-leaflet.extras.svg)](https://anaconda.org/conda-forge/r-leaflet.extras) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-leaflet.extras.svg)](https://anaconda.org/conda-forge/r-leaflet.extras) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-leaflet.extras.svg)](https://anaconda.org/conda-forge/r-leaflet.extras) |
 
 Installing r-leaflet.extras
 ===========================
