@@ -13,9 +13,9 @@ source:
   sha256: fc7b0611e6664d0e3e7e67b2e65555c6029727dc35b74ec0d3e753ce42312752
 
 build:
-  number: 0
+  number: 1
+  merge_build_host: True  # [win]
   script: R CMD INSTALL --build .
-  skip: True  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,17 +25,15 @@ requirements:
     - r-base
     - r-htmltools
     - r-htmlwidgets
-    - r-leaflet >=1.1.0
+    - r-leaflet >=2.0.0
     - r-magrittr
-    - r-shiny
     - r-stringr
   run:
     - r-base
     - r-htmltools
     - r-htmlwidgets
-    - r-leaflet >=1.1.0
+    - r-leaflet >=2.0.0
     - r-magrittr
-    - r-shiny
     - r-stringr
 
 test:
