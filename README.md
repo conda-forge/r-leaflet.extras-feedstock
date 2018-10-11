@@ -1,7 +1,7 @@
 About r-leaflet.extras
 ======================
 
-Home: https://cran.r-project.org/web/packages/leaflet.extras
+Home: https://github.com/bhaskarvk/leaflet.extras, https://bhaskarvk.github.io/leaflet.extras/
 
 Package license: GPL-3
 
