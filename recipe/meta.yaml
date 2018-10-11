@@ -1,27 +1,30 @@
-{% set version = "1.0.0" %}
-
+{% set version = '1.0.0' %}
+{% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-leaflet.extras
-  version: {{ version }}
+  version: {{ version|replace("-", "_") }}
 
 source:
   fn: leaflet.extras_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/leaflet.extras_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/leaflet.extras/leaflet.extras_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/leaflet.extras_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/leaflet.extras/leaflet.extras_{{ version }}.tar.gz
   sha256: fc7b0611e6664d0e3e7e67b2e65555c6029727dc35b74ec0d3e753ce42312752
 
 build:
-  number: 1
   merge_build_host: True  # [win]
-  script: R CMD INSTALL --build .
+  number: 2
+  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+  host:
     - r-base
     - r-htmltools
     - r-htmlwidgets
@@ -38,18 +41,26 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('leaflet.extras')"  # [not win]
+    - $R -e "library('leaflet.extras')"           # [not win]
     - "\"%R%\" -e \"library('leaflet.extras')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/web/packages/leaflet.extras
+  home: https://github.com/bhaskarvk/leaflet.extras, https://bhaskarvk.github.io/leaflet.extras/
   license: GPL-3
-  license_file: LICENSE
   summary: The 'leaflet' JavaScript library provides many plugins some of which are available
     in the core 'leaflet' package, but there are many more. It is not possible to support
     them all in the core 'leaflet' package. This package serves as an add-on to the
     'leaflet' package by providing extra functionality via 'leaflet' plugins.
+  license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 
 extra:
   recipe-maintainers:
     - ocefpaf
+    - johanneskoester
+    - bgruening
+    - daler
+    - jdblischak
+    - cbrueffer
+    - dbast
