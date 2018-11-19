@@ -14,9 +14,8 @@ Summary: The 'leaflet' JavaScript library provides many plugins some of which ar
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-leaflet.extras-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-leaflet.extras-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-leaflet.extras-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-leaflet.extras-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-leaflet.extras-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-leaflet-extras-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-leaflet.extras-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-leaflet.extras-feedstock)
 
 Current release info
 ====================
