@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: leaflet.extras_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/leaflet.extras_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leaflet.extras/leaflet.extras_{{ version }}.tar.gz
@@ -46,7 +45,7 @@ test:
 
 about:
   home: https://github.com/bhaskarvk/leaflet.extras, https://bhaskarvk.github.io/leaflet.extras/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: The 'leaflet' JavaScript library provides many plugins some of which are available
     in the core 'leaflet' package, but there are many more. It is not possible to support
     them all in the core 'leaflet' package. This package serves as an add-on to the
@@ -58,9 +57,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - ocefpaf
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
