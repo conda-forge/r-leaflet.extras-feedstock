@@ -1,11 +1,11 @@
-About r-leaflet.extras
-======================
+About r-leaflet.extras-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leaflet.extras-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bhaskarvk/leaflet.extras, https://bhaskarvk.github.io/leaflet.extras/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-leaflet.extras-feedstock/blob/main/LICENSE.txt)
 
 Summary: The 'leaflet' JavaScript library provides many plugins some of which are available in the core 'leaflet' package, but there are many more. It is not possible to support them all in the core 'leaflet' package. This package serves as an add-on to the 'leaflet' package by providing extra functionality via 'leaflet' plugins.
 
