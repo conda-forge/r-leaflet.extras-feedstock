@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leaflet.extras_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leaflet.extras/leaflet.extras_{{ version }}.tar.gz
-  sha256: fc7b0611e6664d0e3e7e67b2e65555c6029727dc35b74ec0d3e753ce42312752
+  sha256: 0cf0eb1cd278ba01073d2c271304e8ab02454981647879239ad53dac4d8b182e
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1006
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,10 +46,8 @@ test:
 about:
   home: https://github.com/bhaskarvk/leaflet.extras, https://bhaskarvk.github.io/leaflet.extras/
   license: GPL-3.0-only
-  summary: The 'leaflet' JavaScript library provides many plugins some of which are available
-    in the core 'leaflet' package, but there are many more. It is not possible to support
-    them all in the core 'leaflet' package. This package serves as an add-on to the
-    'leaflet' package by providing extra functionality via 'leaflet' plugins.
+  summary: The 'leaflet' JavaScript library provides many plugins some of which are available in the core 'leaflet' package, but there are many more. It is not possible to support them all in the core 'leaflet' package. This package serves as an add-on to the 'leaflet' package by providing extra functionality via 'leaflet'
+    plugins.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
