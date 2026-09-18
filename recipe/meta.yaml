@@ -1,4 +1,4 @@
-{% set version = "2.0.2" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/leaflet.extras_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/leaflet.extras/leaflet.extras_{{ version }}.tar.gz
-  sha256: d4de170d9f02f230552f7610f1aae9653ccf52db182da49f07233b23ece7464c
+  sha256: 744a5aa191c7db7fd4f8e3fcfc0442e3a58ca701eaf3774a0edd1d8f37b928e9
 
 build:
   noarch: generic
